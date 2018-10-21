@@ -4,7 +4,7 @@
 #include "studentview.h"
 //#include <QPixmap>
 
-
+// THIS IS MY RANDOM COMMENT
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -26,15 +26,20 @@ void MainWindow::on_pushButton_Login_clicked()
     QString username = ui->lineEdit_Username->text();
     QString password = ui->lineEdit_Password->text();
 
+     // We need to varify usernames and passwords at this point
+
     if(username == "test" && password == "test")
     {
-        QMessageBox::information(this, "Login", "Username and Password is correct.");
-        hide();
+
+        //QMessageBox::information(this, "Login", "Username and Password is correct.");  //not needed
+        hide();  // Hides the Login box
        studentView = new StudentView(this);
-        studentView->show();
+        studentView->show();  // opens student view
      }
+
     else
     {
         QMessageBox::warning (this, "Login", "Username and Password is not correct.");
+        // Need a loop to return to Login after warning is issued
     }
 }

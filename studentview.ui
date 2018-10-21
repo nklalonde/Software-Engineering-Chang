@@ -6,33 +6,73 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>752</width>
-    <height>639</height>
+    <width>900</width>
+    <height>900</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>900</width>
+    <height>900</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QCalendarWidget" name="calendarWidget">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>230</y>
-     <width>371</width>
-     <height>161</height>
+     <x>420</x>
+     <y>250</y>
+     <width>311</width>
+     <height>221</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <family>Franklin Gothic Book</family>
-     <pointsize>18</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_StudentView">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>381</width>
+     <height>461</height>
+    </rect>
    </property>
-   <property name="text">
-    <string>This is the Student View</string>
+   <property name="title">
+    <string>GroupBox</string>
    </property>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>261</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Courses</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>130</y>
+      <width>261</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Grades</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>
